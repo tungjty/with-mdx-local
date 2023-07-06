@@ -1,0 +1,39 @@
+---
+title: My first post on blog
+excerpt: Some excerpt in first post
+author: Tung Hoang
+date: '2023-07-05'
+---
+
+import MyComponent from '../../components/MyComponent'
+import Layout from '../../components/Layout'
+import Button from '../../components/button'
+
+export const LocalComponent = (props) => (
+  <span style={{ color: 'green' }} {...props} />
+)
+
+export const year = 2023
+
+# This is my first post.
+
+This is a list in markdown:
+- One
+- Two
+- Three
+
+<div className='text-blue-700'>This is div tag of ***JSX***</div>
+
+<MyComponent name='MDX' />
+
+<LocalComponent>This is local component with year is { year }</LocalComponent>
+
+<div>Here is a number : { Math.floor(3.14) }</div>
+
+Look, a button! 👇
+
+<Button>👋 Hello</Button>
+
+[👈 Go back home](/)
+
+export default ({ children }) => <article className='prose'>{ children }</article>

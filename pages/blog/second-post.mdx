@@ -1,0 +1,14 @@
+---
+title: My second post on blog
+excerpt: Some excerpt in second post
+author: Tung Hoang
+date: '2023-07-06'
+---
+
+import FirstPost from './first-post.mdx'
+
+# This is second post.
+
+<FirstPost />
+
+export default ({ children }) => <article className='prose'>{ children }</article>
